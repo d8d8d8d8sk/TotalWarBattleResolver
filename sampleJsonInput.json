@@ -1,0 +1,58 @@
+{
+  "attackers": [
+    {
+      "name": "SPQR",
+      "armies": [
+        {
+          "leaders": [
+            {
+              "name": "Smackimus Maximus",
+              "eloq": 1.1,
+              "militaryBonus": 1.1
+            }
+          ],
+          "units": [
+            {
+              "unitType": "Hastati",
+              "numOfTroops": 120,
+              "meleeBaseAtt": 10,
+              "rangeBaseAtt": 7,
+              "defBase": 10,
+              "attEquipModifier": 1.1,
+              "defEquipModifier": 1.1,
+              "experience": 1.1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "defenders": [
+    {
+      "name": "Carthage",
+      "armies": [
+        {
+          "leaders": [
+            {
+              "name": "Hannibal",
+              "eloq": 1.1,
+              "militaryBonus": 1.1
+            }
+          ],
+          "units": [
+            {
+              "unitType": "Elephants",
+              "numOfTroops": 100,
+              "meleeBaseAtt": 15,
+              "rangeBaseAtt": 7,
+              "defBase": 6,
+              "attEquipModifier": 1.1,
+              "defEquipModifier": 1.1,
+              "experience": 1.1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

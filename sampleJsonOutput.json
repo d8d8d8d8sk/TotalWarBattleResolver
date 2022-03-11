@@ -1,0 +1,13 @@
+{
+  "battleResultDescription": "Heroic Victory",
+  "winnerNames": [
+    "SPQR"
+  ],
+  "loserNames": [
+    "Carthage"
+  ],
+  "howManyPeopleDidTheAttackerKill": 0,
+  "howManyPeopleDidTheAttackerLose": 0,
+  "howManyPeopleDidTheDefenderKill": 0,
+  "howManyPeopleDidTheDefenderLose": 0
+}
