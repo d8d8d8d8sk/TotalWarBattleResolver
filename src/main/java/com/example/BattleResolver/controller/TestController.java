@@ -1,15 +1,20 @@
 package com.example.BattleResolver.controller;
 
 import com.example.BattleResolver.data.*;
+import com.example.BattleResolver.number_crunching.CrunchAutoResolveBattleNumberStuff;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@RequiredArgsConstructor
 public class TestController {
+    private final CrunchAutoResolveBattleNumberStuff cruncher;
 
     @PostMapping(value="/getNullBattleRequest")
     public BattleRequest getNullBattleRequest(){
@@ -24,6 +29,11 @@ public class TestController {
         br.setAttackers(List.of(f));
         br.setDefenders(List.of(f));
         return br;
+    }
+
+    @PostMapping(value="/autoResolveBattle")
+    public BattleResult autoResolveBattle(@RequestBody BattleRequest br){
+        return cruncher.battleResult(br.getAttackers(), br.getDefenders());
     }
 
     @PostMapping(value="/getSampleBattle")
